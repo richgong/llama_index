@@ -3,15 +3,15 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 from sqlalchemy import MetaData, create_engine, insert, inspect, text
 from sqlalchemy.engine import Engine
-from sqlalchemy.engine.interfaces import ReflectedIndex
+# from sqlalchemy.engine.interfaces import ReflectedIndex
 from sqlalchemy.exc import OperationalError, ProgrammingError
 
 
-def _format_index(index: ReflectedIndex) -> str:
-    return (
-        f'Name: {index["name"]}, Unique: {index["unique"]},'
-        f' Columns: {index["column_names"]!s}'
-    )
+# def _format_index(index: ReflectedIndex) -> str:
+#     return (
+#         f'Name: {index["name"]}, Unique: {index["unique"]},'
+#         f' Columns: {index["column_names"]!s}'
+#     )
 
 
 class SQLDatabase:
